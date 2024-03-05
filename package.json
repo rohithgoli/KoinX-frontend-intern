@@ -1,0 +1,22 @@
+{
+  "name": "KoinX-frontend-intern",
+  "version": "1.0.0",
+  "description": "Assignment for parttime frontend-intern role at KoinX",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Rohith Goli",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.2"
+  }
+}
