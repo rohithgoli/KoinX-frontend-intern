@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+#root {
+    background-color: #dfe2ed;
+}
+
 .app-container {
     width: 100vw;
     display: flex;
@@ -12,9 +16,10 @@
 }
 
 .header-container-mobile {
+    background-color: white;
     width: 100vw;
     height: 90px;
-    padding: 10px;
+    padding: 10px 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,4 +86,237 @@
     padding: 4px 24px;
     margin-left: 32px;
     border: 0px;
+}
+
+.body-container-mobile {
+    background-color: #dfe2ed;
+    min-height: 90vh;
+    padding: 24px 16px 0px 16px;
+}
+
+.body-container-desktop {
+    background-color: #dae0f0;
+    min-height: 90vh;
+    padding: 16px 80px 0px 80px;
+}
+
+.navigator-currency-title-mobile {
+    color: grey;
+}
+
+.navigator-currency-title-desktop {
+    color: grey;
+}
+
+.navigator-currency-name-mobile {
+    color: black;
+    font-weight: 600;
+}
+
+.navigator-currency-name-desktop {
+    color: black;
+    font-weight: 600;
+}
+
+.get-started-container-mobile {
+    background-color: #0f4afc;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    max-width: 100%;
+    margin: 24px 0px;
+    flex-shrink: 1;
+}
+
+.get-started-image-mobile {
+    height: 120px;
+    width: 120px;
+}
+
+.get-started-heading-mobile {
+    font-size: 24px;
+    padding: 16px 0px;
+    text-align: center;
+}
+
+.get-started-description-mobile {
+    text-align: center;
+    line-height: 18px;
+    padding: 16px 8px;
+}
+
+.get-started-btn-mobile {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px 38px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0px;
+    font-size: 16px;
+    margin: 12px 0px;
+}
+
+.get-started-container-desktop {
+    background-color: #0f4afc;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    max-width: 30%;
+    min-height: 520px;
+    flex-grow: 1;
+    margin: 24px 0px;
+}
+
+.get-started-image-desktop {
+    height: 150px;
+    width: 150px;
+    margin: 12px 0px;
+    flex-grow: 1;
+}
+
+.get-started-heading-desktop {
+    font-size: 20px;
+    padding: 12px 0px;
+    text-align: center;
+    max-width: 60%;
+    line-height: 36px;
+    flex-grow: 1;
+}
+
+.get-started-description-desktop {
+    font-size: 12px;
+    text-align: center;
+    line-height: 22px;
+    padding: 6px 8px;
+    max-width: 70%;
+    flex-grow: 1;
+}
+
+.get-started-btn-desktop {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    padding: 12px 38px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 0px;
+    font-size: 14px;
+    margin: 12px 0px;
+    flex-grow: 1;
+}
+
+.trending-coins-section-container-mobile {
+    width: 100vw;
+    padding: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.trending-coins-section-title-mobile {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.trending-coin-details-container-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 14px 4px;
+    width: 100%;
+}
+
+.trending-coin-image-mobile {
+    height: 28px;
+    width: 28px;
+    margin-right: 8px;
+}
+
+.trending-coin-name-mobile {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.trending-coin-trend-container-mobile {
+    align-self: flex-end;
+    background-color: #d7fad9;
+    color: #2b8730;
+    height: 32px;
+    width: 96px;
+    font-size: 16px;
+    font-weight:600;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.trending-coin-trend-down-container-mobile {
+    background-color: #f5bfb8;
+    color: #d4311c;
+    height: 32px;
+    width: 96px;
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.trending-coins-section-container-desktop {
+    max-width: 30%;
+    padding: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.trending-coins-section-title-desktop {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 8px;
+    letter-spacing: -0.9;
+}
+
+.trending-coin-details-container-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 14px 4px 0px 4px;
+    width: 100%;   
+}
+
+.trending-coin-image-desktop {
+    height: 26px;
+    width: 26px;
+    margin-right: 8px;
+}
+
+.trending-coin-name-desktop {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.8;
 }
