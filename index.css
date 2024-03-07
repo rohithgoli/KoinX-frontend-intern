@@ -244,8 +244,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 24px 0px;
-    margin: 8px 0px;
+    padding: 18px 0px;
+    margin: 4px 0px;
 }
 
 .currency-price-container-desktop {
@@ -355,6 +355,7 @@
 
 .separator {
     border: 1.25px solid #dde0dd;
+    margin: 12px 0px;
 }
 
 .currency-chart-header-content-container-mobile {
@@ -446,7 +447,6 @@
     color: white;
     width: 100%;
     min-height: 520px;
-    flex-grow: 1;
     margin: 24px 0px;
 }
 
@@ -592,4 +592,258 @@
     font-size: 16px;
     font-weight: 600;
     opacity: 0.8;
+}
+
+
+.team-section-container-desktop {
+    width:100%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.team-section-description {
+    margin: 14px 0px;
+    font-weight:bold;
+    opacity: 0.7;
+    line-height: 26px;
+}
+
+.team-member-container-desktop {
+    background-color: #dcecf7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0px;
+    border-radius: 8px;
+}
+
+.team-member-profile-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 24px;
+}
+
+.team-member-profile-pic {
+    height: 120px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.team-member-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 0px 4px 0px;
+    letter-spacing: -0.9;
+}
+
+.team-member-designation {
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.team-member-profile-description-container-desktop {
+    padding: 0px 12px;
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.team-section-container-mobile {
+    width:100%;
+    background-color: white;
+    padding: 16px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.team-member-container-mobile {
+    background-color: #dcecf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0px;
+    border-radius: 8px;
+    padding-bottom: 14px;
+}
+
+.team-member-profile-description-container-mobile {
+    padding: 0px 12px;
+    line-height: 22px;
+    font-size: 15px;
+} 
+
+.about-section-container-mobile {
+    width:100%;
+    background-color: white;
+    padding: 16px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+}
+
+.about-section-container-desktop {
+    width:100%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+    font-family: "Roboto";
+}
+
+.about-section-item-title {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 12px 0px;
+    letter-spacing: -0.9;
+}
+
+.about-section-item-description {
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.6;
+    line-height: 24px;
+}
+
+.about-footer-section-heading-mobile {
+    margin: 14px 0px;
+    letter-spacing: -0.9;
+    opacity: 0.9;
+}
+
+.about-footer-section-heading-desktop {
+    margin: 16px 0px;
+    letter-spacing: -0.9;
+    opacity: 0.9;
+}
+
+.about-footer-calculate-cards-container-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.about-footer-calculate-cards-container-desktop {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    min-width: 90%;
+    justify-content: space-between
+}
+
+.calculation-card-container-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.calculation-card-container-desktop {
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.card-image-container {
+    height: 130px;
+    width: 140px;
+    border-radius: 8px;
+}
+
+.calculate-card-image {
+    border-radius: 8px;
+    height: 130px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.profit-card {
+    background: linear-gradient(to left top, #0698c4, #78c0f0, #9cf598);
+}
+
+.tax-card {
+    background: linear-gradient(to left top, #c44623 ,#f38d71)
+}
+
+.card-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6px 24px;
+    height: 130px;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-btn {
+    width: 140px;
+    border: 0px;
+    outline: none;
+    height: 36px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 4px 18px;
+    border-radius: 8px;
+    letter-spacing: -0.9;
+}
+
+.tokenomics-section-container {
+    width:100%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+}
+
+.tokenomics-distribution-container {
+    margin: 24px 0px;
+}
+
+.tokenomics-distribution-image-container {
+    height: 240px;
+    width: 380px;
+    margin: 20px 0px;
+}
+
+.tokenomics-section-image {
+    height: 240px;
+    width: 380px;
+    object-fit: cover;
+}
+
+.tokenomics-description {
+    font-weight: 600;
+    line-height: 26px;
+    opacity: 0.6;
 }
