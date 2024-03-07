@@ -47,6 +47,96 @@ export const CHART_HEADER_TIME_PERIODS = [
     }
 ];
 
+export const DAY_PERFORMANCE_DETAILS = [
+    {
+        "id": "todayLow",
+        "title": "Today's Low",
+        "value": "46,930.22"
+    },
+    {
+        "id": "todayHigh",
+        "title": "Today's High",
+        "value": "49,343.83"
+    },
+    {
+        "id": "current",
+        "value": "$48,637.83"
+    }
+];
+
+export const WEEK_PERFORMANCE_DETAILS = [
+    {
+        "id": "52wLow",
+        "title": "52W Low",
+        "value": "16,930.22"
+    },
+    {
+        "id": "52wHigh",
+        "title": "52W High",
+        "value": "49,743.83"
+    }
+]
+
+export const FUNDAMENTALS_DETAILS = [
+    {
+        "id": "bitcoinPrice",
+        "title": "Bitcoin Price",
+        "value": "$16,815.46"
+    },
+    {
+        "id": "24hLowHigh",
+        "title": "24h Low / 24h High",
+        "value": "$16,382.07 / $16,874.12"
+    },
+    {
+        "id": "7dLowHigh",
+        "title": "7d Low / 7d High",
+        "value": "$16,382.07 / $16,874.12"
+    },
+    {
+        "id": "tradingVolume",
+        "title": "Trading Volume",
+        "value": "$23,249,202,782"
+    },
+    {
+        "id": "marketCapRank",
+        "title": "Market Cap Rank",
+        "value": "#1"
+    },
+    {
+        "id": "marketCap",
+        "title": "Market Cap",
+        "value": "$323,507,290,047"
+    },
+    {
+        "id": "marketCapDominance",
+        "title": "Market Cap Dominance",
+        "value": "38.343%"
+    },
+    {
+        "id": "marketCapVolume",
+        "title": "Volume / Market Cap",
+        "value": "0.0718"
+    }
+]
+
+export const ALL_TIME_RECORDS = [
+    {
+        "id": "allTimeHigh",
+        "title": "All-Time High",
+        "value": "$69,044.77",
+        "currentPercentVariation": "-75.6%",
+        "timePeriod": "Nov 10, 2021 (about 1 year)"
+    },
+    {
+        "id": "allTimeLow",
+        "title": "All-Time Low",
+        "value": "$67.81",
+        "currentPercentVariation": "24729.1%",
+        "timePeriod": "Jul 06, 2013 (over 9 years)"
+    }
+]
+
 export const CALCULATE_CARD_DETAILS = [
     {
         "id": 1,

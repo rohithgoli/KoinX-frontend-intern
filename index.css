@@ -29,7 +29,6 @@
 
 .header-container-desktop {
     background-color: white;
-    width: 100vw;
     height: 100px;
     padding: 5px 80px;
     display: flex;
@@ -846,4 +845,235 @@
     font-weight: 600;
     line-height: 26px;
     opacity: 0.6;
+}
+
+.currency-information-container-mobile {
+    width:100%;
+    background-color: white;
+    padding: 16px 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+}
+
+.currency-information-container-desktop {
+    width:100%;
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 18px;
+    font-family: "Roboto";
+}
+
+.performance-indicator-container-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    color: grey;
+}
+
+.performance-details-indicator-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0px;
+}
+
+.performance-metric-container-mobile {
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.performance-indicator-container-desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.performance-details-indicator-desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0px;
+    color: grey;
+}
+
+.performance-metric-container {
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-metric {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.day-pointer-container-mobile {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.current-day-value-mobile {
+    margin-left: 57%;
+}
+
+.day-pointer-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.day-indicator-separator {
+    height: 6px;
+    border: 1.2px solid white;
+    border-radius: 1px;
+    background: linear-gradient(to right, red, yellow, green);;
+    width: 100%; 
+}
+
+.current-day-value-indicator {
+    margin-left: 74%;
+    font-weight: bold;
+}
+
+.current-day-value {
+    margin-left: 70%;
+}
+
+.week-indicator-separator {
+    height: 6px;
+    border: 1.2px solid white;
+    border-radius: 1px;
+    background: linear-gradient(to right, red, yellow, green);;
+    width: 75%;
+}
+
+.week-indicator-separator-mobile {
+    height: 6px;
+    border: 1.2px solid white;
+    border-radius: 1px;
+    background: linear-gradient(to right, red, yellow, green);
+    width: 48%;
+}
+
+.fundamentals-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.fundamentals-title-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.fundamentals-section-title {
+    opacity: 0.8;
+    font-size: 22px;
+}
+
+.info-icon-container {
+    color: white;
+    background-color: #c2cff6;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c2cff6;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+.fundamentals-metrics-container-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundamentals-metrics-container-desktop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+.fundamental-metric-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.5px solid gainsboro;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.metric-part-container-desktop {
+    width: 42%;
+}
+
+.fundamental-metric-title {
+    color: grey;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fundamental-metric-value {
+    font-weight: bold;
+    opacity: 0.8;
+    color: black;
+    align-self: flex-end;
+    letter-spacing: -0.9;
+}
+
+.record-metric-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.5px solid gainsboro;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.record-metric-details-container {
+    text-align: right;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.positive-record {
+    color: #2b8730;
+}
+
+.negative-record {
+    color: #d4311c;
+}
+
+.record-metric-occurence-time {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
 }

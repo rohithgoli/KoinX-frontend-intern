@@ -3,6 +3,7 @@ import { Mobile, Desktop } from '../ScreenView'
 import BodyNavigator from './BodyNavigator'
 import GetStartedSection from '../GetStartedSection/GetStartedSection'
 import TrendingCoins from '../TrendingCoins/TrendingCoins'
+import CurrencyInformation from '../CurrencyInformation/CurrencyInformation'
 import About from '../AboutSection/About'
 import Tokenomics from '../Tokenomics/Tokenomics'
 import Team from '../Team/Team'
@@ -17,6 +18,7 @@ const Body = () => {
           <BodyNavigator/>
           <div className="body-content-container-mobile">
             <CurrencyDetails/>
+            <CurrencyInformation/>
             <About/>
             <Team />
           </div>
@@ -31,8 +33,8 @@ const Body = () => {
           <div className="body-content-container-desktop">
             <div className="body-primary-content-container-desktop">
               <CurrencyDetails />
-              {/* <CurrencyInformation />
-              <Sentiment />
+              <CurrencyInformation />
+              {/* <Sentiment />
   */}
               <About />
               <Tokenomics />

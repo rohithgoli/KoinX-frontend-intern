@@ -16,7 +16,7 @@ const CurrencyPriceDetails = () => {
             const response = await fetch(`${CURRENCY_PRICE_DETAILS_BASE_URL}bitcoin${CURRENCY_PRICE_DETAILS_URL_PARAMS}`);
             const responseData = await response.json();
             const priceDetails = responseData['bitcoin'];
-            console.log(priceDetails);
+            
             setCurrencyPriceDetails(priceDetails);
             setApiStatus(API_STATUS_CONSTANTS.SUCCESS);
         } catch(error) {
@@ -53,11 +53,13 @@ const CurrencyPriceDetails = () => {
     }
 
 
-    console.log(formattedInr, formattedUsd)
   return (
     <>
         <Mobile>
-            <div className="currency-price-details-container-mobile">
+            {
+                apiStatus === API_STATUS_CONSTANTS.IN_PROGRESS ? <p>Loading...</p>
+                :
+                <div className="currency-price-details-container-mobile">
                     <div className="currency-price-container-mobile">
                         { currencyPriceDetails?.usd && <h2><span>$</span>{formattedUsd}</h2> }
                         { currencyPriceDetails?.inr && <h5 className="currency-inr-mobile">{`${formattedInr}`}</h5> }
@@ -67,18 +69,23 @@ const CurrencyPriceDetails = () => {
                     </div>
                     <p className="currency-price-change-duration">{`(24H)`}</p>
                 </div>
+            }
         </Mobile>
         <Desktop>
-            <div className="currency-price-details-container-desktop">
-                <div className="currency-price-container-desktop">
-                    { currencyPriceDetails?.usd && <h1><span>$</span>{formattedUsd}</h1> }
-                    { currencyPriceDetails?.inr && <h5 className="currency-inr">{`${formattedInr}`}</h5> }
+            {
+                apiStatus === API_STATUS_CONSTANTS.IN_PROGRESS ? <p>Loading...</p>
+                :
+                <div className="currency-price-details-container-desktop">
+                    <div className="currency-price-container-desktop">
+                        { currencyPriceDetails?.usd && <h1><span>$</span>{formattedUsd}</h1> }
+                        { currencyPriceDetails?.inr && <h5 className="currency-inr">{`${formattedInr}`}</h5> }
+                    </div>
+                    <div className={trendChangeClassName}>
+                        <p>{roundedUsdChange}<span>%</span></p>
+                    </div>
+                    <p className="currency-price-change-duration">{`(24H)`}</p>
                 </div>
-                <div className={trendChangeClassName}>
-                    <p>{roundedUsdChange}<span>%</span></p>
-                </div>
-                <p className="currency-price-change-duration">{`(24H)`}</p>
-            </div>
+            }
         </Desktop>
     </>
   )
