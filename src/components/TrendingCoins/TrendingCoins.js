@@ -17,6 +17,7 @@ const TrendingCoins = () => {
             const responseData = await response.json();
             const coinsList = responseData?.coins;
             const trendingCoinsList = coinsList.slice(0,3);
+            console.log(trendingCoinsList);
             setTrendingCoinsList(trendingCoinsList);
             setApiStatus(API_STATUS_CONSTANTS.SUCCESS);
         } catch(error) {

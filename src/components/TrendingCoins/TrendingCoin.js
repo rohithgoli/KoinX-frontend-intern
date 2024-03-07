@@ -6,7 +6,7 @@ const TrendingCoin = ({coinDetails}) => {
     const {small: coinIconImgLink, name, symbol, data} = coinDetails;
     const {price_change_percentage_24h} = data;
     const {inr} = price_change_percentage_24h;
-    const roundedInr = inr < 0 ? Math.round(inr, 2)*(-1) : Math.round(inr, 2);
+    const roundedInr = inr < 0 ? parseFloat(inr.toFixed(2)) * (-1) : parseFloat(inr.toFixed(2));
 
     const trendChangeClassName = inr >= 0.00 ? "trending-coin-trend-container-mobile" : "trending-coin-trend-down-container-mobile" 
 
